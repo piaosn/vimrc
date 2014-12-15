@@ -203,3 +203,13 @@ call nerdtree#postSourceActions()
 let &cpo = s:old_cpo
 
 " vim: set sw=4 sts=4 et fdm=marker:
+
+
+" For winmanager
+let g:NERDTree_title = "[NERDTree]"
+function! NERDTree_Start()
+    exe 'NERDTree'
+endfunction
+function! NERDTree_IsValid()
+    return 1
+endfunction
