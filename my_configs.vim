@@ -56,3 +56,11 @@ nmap wm :WMToggle<cr>
 
 "My Plugins
 call pathogen#infect('~/.vim_runtime/sources_psn/{}')
+
+"My Plugins Config
+"disable luainspect autorun
+let g:lua_inspect_events = ''
+nmap <F6> :LuaInspectToggle<CR>
+"disable luainspect warning
+let g:lua_inspect_warnings = 0
+
