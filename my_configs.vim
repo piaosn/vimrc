@@ -1,5 +1,8 @@
 " This my own profile
 
+"My Plugins
+call pathogen#infect('~/.vim_runtime/sources_psn/{}')
+
 " Auto close vim when there's only the nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
@@ -54,13 +57,10 @@ let g:winManagerWindowLayout = "FileExplorer|TagList"
 let g:winManagerWidth = 50
 nmap wm :WMToggle<cr>
 
-"My Plugins
-call pathogen#infect('~/.vim_runtime/sources_psn/{}')
-
 "My Plugins Config
 "disable luainspect autorun
-let g:lua_inspect_events = ''
-nmap <F6> :LuaInspectToggle<CR>
+"let g:lua_inspect_events = ''
+"nmap <F6> :LuaInspectToggle<CR>
 "disable luainspect warning
-let g:lua_inspect_warnings = 0
+"let g:lua_inspect_warnings = 0
 
